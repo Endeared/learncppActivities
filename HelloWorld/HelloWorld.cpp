@@ -21,12 +21,23 @@ int getInput()
 	return 0;
 }
 
+int getTwoInputs()
+{
+	std::cout << "Enter two numbers separated by a space: ";
+	
+	int x{};
+	int y{};
+	std::cin >> x >> y;
+	
+	std::cout << "You entered " << x << " and " << y << '\n';
+	return 0;
+}
+
 int main()
 {
 	//std::cout << "Hello world!\n";                 // std::cout lives in the iostream library
 	//std::cout << "It is very nice to meet you!\n"; // this is much easier to read
 	//std::cout << "Yeah!\n";                        // don't you think so?
-	test();
-	getInput();
+	getTwoInputs();
 	return 0;
 }
