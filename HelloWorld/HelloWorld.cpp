@@ -7,7 +7,8 @@ int test()
 	double width = 0.0;
 	int a = 1;
 	int b = 2;
-	std::cout << a;
+	std::cout << a << std::endl;
+	std::cout << "x is equal to: " << x;
 	return 0;
 }
 
