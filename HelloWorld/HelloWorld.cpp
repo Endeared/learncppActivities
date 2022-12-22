@@ -2,7 +2,7 @@
 
 int test()
 {
-	int y;
+	int y = 0;
 	int x = 3;
 	double width = 0.0;
 	int a = 1;
