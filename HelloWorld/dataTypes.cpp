@@ -2,8 +2,10 @@
 
 int main()
 {
-	std::cout << "Hello world!\n";                 // std::cout lives in the iostream library
-	std::cout << "It is very nice to meet you!\n"; // this is much easier to read
-	std::cout << "Yeah!\n";                        // don't you think so?
+	/*int x = 3;
+	double width = 0.0;*/
+	int a = 1;
+	/*int b = 2;*/
+	std::cout << a;
 	return 0;
 }
