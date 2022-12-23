@@ -5,7 +5,8 @@ int doubleNumber()
 	int x{};
 	std::cout << "Enter an integer: ";
 	std::cin >> x;
-	std::cout << "Double that number is: " << x * 2;
+	std::cout << "Double " << x << " is: " << x * 2 << '\n';
+	std::cout << "Triple " << x << " is: " << x * 3;
 	return 0;
 }
 
