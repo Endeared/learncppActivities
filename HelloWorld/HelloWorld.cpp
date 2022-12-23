@@ -68,18 +68,18 @@ void foo() // no longer inside of main()
 	std::cout << "foo!\n";
 }
 
+int returnFive()
+{
+	// the return statement indicates the specific value that will be returned
+	return 5; // return the specific value 5 back to the caller
+}
+
 int main()
 {
-	//std::cout << "Hello world!\n";                 // std::cout lives in the iostream library
-	//std::cout << "It is very nice to meet you!\n"; // this is much easier to read
-	//std::cout << "Yeah!\n";                        // don't you think so?
-	// get a value from the user
-	std::cout << "Enter an integer: ";
-	int num{};
-	std::cin >> num;
+	std::cout << returnFive() << '\n'; // prints 5
+	std::cout << returnFive() + 2 << '\n'; // prints 7
 
-	// print the value doubled
-	std::cout << num << " doubled is: " << num * 2 << '\n';
+	returnFive(); // okay: the value 5 is returned, but is ignored since main() doesn't do anything with it
 
 	return 0;
 }
