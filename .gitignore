@@ -29,3 +29,6 @@ HelloWorld/.vs/HelloWorld/v17/ipch/AutoPCH/4330a68f383f06a0/DATATYPES.ipch
 HelloWorld/.vs/HelloWorld/FileContentIndex/04ac0932-9552-48aa-b44b-85415a9c9ff7.vsidx
 HelloWorld/.vs/HelloWorld/FileContentIndex/read.lock
 HelloWorld/.vs/slnx.sqlite
+*.vsidx
+*.vsidx
+HelloWorld/.vs/HelloWorld/FileContentIndex/305e2a9e-c949-450e-9d77-3b2c07c09819.vsidx

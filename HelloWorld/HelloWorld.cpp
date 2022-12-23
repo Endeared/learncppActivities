@@ -43,11 +43,20 @@ int getTwoInputs()
 	return 0;
 }
 
+void doPrint()
+{
+	std::cout << "In doPrint()\n";
+}
+
 int main()
 {
 	//std::cout << "Hello world!\n";                 // std::cout lives in the iostream library
 	//std::cout << "It is very nice to meet you!\n"; // this is much easier to read
 	//std::cout << "Yeah!\n";                        // don't you think so?
-	doubleNumber();
+	std::cout << "Starting main()\n";
+	doPrint(); // doPrint() called for the first time
+	doPrint(); // doPrint() called for the second time
+	std::cout << "Ending main()\n";
+
 	return 0;
 }
