@@ -74,12 +74,35 @@ int returnFive()
 	return 5; // return the specific value 5 back to the caller
 }
 
+int getValueFromUserUB() // this function returns an integer value
+{
+	std::cout << "Enter an integer: ";
+	int input{};
+	std::cin >> input;
+
+	// note: no return statement
+	return input;
+}
+
+int getValueFromUser()
+{
+	std::cout << "Enter an integer: ";
+	int input{};
+	std::cin >> input;
+
+	return input;
+}
+
+void printHi()
+{
+	std::cout << "Hi" << '\n';
+
+	// This function does not return a value so no return statement is needed
+}
+
 int main()
 {
-	std::cout << returnFive() << '\n'; // prints 5
-	std::cout << returnFive() + 2 << '\n'; // prints 7
-
-	returnFive(); // okay: the value 5 is returned, but is ignored since main() doesn't do anything with it
+	printHi(); // okay: function printHi() is called, no value is returned
 
 	return 0;
 }
