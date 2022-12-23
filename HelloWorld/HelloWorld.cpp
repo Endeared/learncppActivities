@@ -1,5 +1,14 @@
 #include <iostream>
 
+int doubleNumber()
+{
+	int x{};
+	std::cout << "Enter an integer: ";
+	std::cin >> x;
+	std::cout << "Double that number is: " << x * 2;
+	return 0;
+}
+
 int test()
 {
 	int y = 0;
@@ -38,6 +47,6 @@ int main()
 	//std::cout << "Hello world!\n";                 // std::cout lives in the iostream library
 	//std::cout << "It is very nice to meet you!\n"; // this is much easier to read
 	//std::cout << "Yeah!\n";                        // don't you think so?
-	getTwoInputs();
+	doubleNumber();
 	return 0;
 }
