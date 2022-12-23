@@ -63,24 +63,22 @@ void doA()
 	std::cout << "Ending doA()\n";
 }
 
-void foo() // no longer inside of main()
+void foo()
 {
 	std::cout << "foo!\n";
 }
 
 int returnFive()
 {
-	// the return statement indicates the specific value that will be returned
-	return 5; // return the specific value 5 back to the caller
+	return 5;
 }
 
-int getValueFromUserUB() // this function returns an integer value
+int getValueFromUserUB()
 {
 	std::cout << "Enter an integer: ";
 	int input{};
 	std::cin >> input;
 
-	// note: no return statement
 	return input;
 }
 
@@ -97,12 +95,20 @@ void printHi()
 {
 	std::cout << "Hi" << '\n';
 
-	// This function does not return a value so no return statement is needed
+}
+
+void returnNothing()
+{
 }
 
 int main()
 {
-	printHi(); // okay: function printHi() is called, no value is returned
+	// When calling a function by itself, no value is required
+	returnNothing(); // ok: we can call a function that does not return a value
+	returnFive();    // ok: we can call a function that returns a value, and ignore that return value
+
+	// When calling a function in a context that requires a value (like std::cout)
+	std::cout << returnFive();    // ok: we can call a function that returns a value, and the value will be used
 
 	return 0;
 }
