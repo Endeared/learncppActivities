@@ -110,9 +110,56 @@ int print() // note: return type of int
 	std::cout << "B"; // this will never be printed
 }
 
+void printA()
+{
+	std::cout << "A\n";
+}
+
+void printB()
+{
+	std::cout << "B\n";
+}
+
+void printValues(int x, int y)
+{
+	std::cout << x << '\n';
+	std::cout << y << '\n';
+}
+
+int add(int x, int y)
+{
+	return x + y;
+}
+
+int multiply(int z, int w)
+{
+	return z * w;
+}
+
+void doSomething()
+{
+	std::cout << "Hello!\n";
+}
+
+void doIt(int x)
+{
+	int y{ 4 };
+	std::cout << "doIt: x = " << x << " y = " << y << '\n';
+
+	x = 3;
+	std::cout << "doIt: x = " << x << " y = " << y << '\n';
+}
+
 int main()
 {
-	std::cout << print(); // print() returns value 5, which will be print to the console
+	int x{ 1 };
+	int y{ 2 };
+
+	std::cout << "main: x = " << x << " y = " << y << '\n';
+
+	doIt(x);
+
+	std::cout << "main: x = " << x << " y = " << y << '\n';
 
 	return 0;
 }
