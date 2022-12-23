@@ -48,15 +48,38 @@ void doPrint()
 	std::cout << "In doPrint()\n";
 }
 
+void doB()
+{
+	std::cout << "In doB()\n";
+}
+
+
+void doA()
+{
+	std::cout << "Starting doA()\n";
+
+	doB();
+
+	std::cout << "Ending doA()\n";
+}
+
+void foo() // no longer inside of main()
+{
+	std::cout << "foo!\n";
+}
+
 int main()
 {
 	//std::cout << "Hello world!\n";                 // std::cout lives in the iostream library
 	//std::cout << "It is very nice to meet you!\n"; // this is much easier to read
 	//std::cout << "Yeah!\n";                        // don't you think so?
-	std::cout << "Starting main()\n";
-	doPrint(); // doPrint() called for the first time
-	doPrint(); // doPrint() called for the second time
-	std::cout << "Ending main()\n";
+	// get a value from the user
+	std::cout << "Enter an integer: ";
+	int num{};
+	std::cin >> num;
+
+	// print the value doubled
+	std::cout << num << " doubled is: " << num * 2 << '\n';
 
 	return 0;
 }
