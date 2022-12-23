@@ -101,14 +101,18 @@ void returnNothing()
 {
 }
 
+int print() // note: return type of int
+{
+	std::cout << "A";
+
+	return 5; // the function will return to the caller here
+
+	std::cout << "B"; // this will never be printed
+}
+
 int main()
 {
-	// When calling a function by itself, no value is required
-	returnNothing(); // ok: we can call a function that does not return a value
-	returnFive();    // ok: we can call a function that returns a value, and ignore that return value
-
-	// When calling a function in a context that requires a value (like std::cout)
-	std::cout << returnFive();    // ok: we can call a function that returns a value, and the value will be used
+	std::cout << print(); // print() returns value 5, which will be print to the console
 
 	return 0;
 }
